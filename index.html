@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Edith Alvarez">
+    <meta name="description" content="Portafolio de desarrollo web">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Edith Alvarez  | Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/fotodeperfil.jpg" alt="Foto de Edith">
+        <h1>Hola, soy Edith Alvarez</h1>
+        <!--<h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>-->
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conóceme</h2>
+        <p class="seccion-texto">Hola! Soy Edith, tengo 25 años. Soy recién egresada de la carrera de Ingeniería en Informática de UPIICSA-IPN. Me interesan diversos temas de tecnología tales como Cloud, Testing y Desarrollo web. Actualmente me encuentro realizando mis prácticas profesionales y mejorando mis skills técnicos de HTML y CSS.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Tengo conocimientos básicos en tecnologías de desarollo web. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-Secondary">HTML</span>
+              <span class="badge text-bg-Secondary">CSS</span>
+              <span class="badge text-bg-Secondary">JavaScript</span>
+              <span class="badge text-bg-Secondary">React</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Artículos</p>
+            <p>Existe mucha información en la web, es por eso que debemos mantenernos actualizados. Leer articulos o blogs siempre es enriquecedor.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-Secondary">Escribir</span>
+              <span class="badge text-bg-Secondary">Editar</span>
+              <span class="badge text-bg-Secondary">Blogs</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Mi alma máter es el IPN. Sin embargo, he tomado distintos cursos a lo largo de mi vida estudiantil y formado parte de bootcamps. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-Secondary">Tecnolochicas PRO</span>
+              <span class="badge text-bg-Secondary">Desarrollo Web</span>
+              <span class="badge text-bg-Secondary">Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificados -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis certificaciones recientes</h2>
+      <h3 class="seccion-descripcion"></h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Certificado -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="Certificaciones/CERTIFICATE_LANDING_PAGE~M68PJEBLNT67.jpeg" alt="Certificado 1">
+              <div class="overlay">
+                <p>Certificado 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.linkedin.com/posts/edith-alvarez-673479125_completion-certificate-for-fundamentos-de-activity-6969790345303793664-Ov-a?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                    <i class=""></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Certificado 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="Certificaciones/CERTIFICATE_LANDING_PAGE~QZK4ZDVRNJLD.jpeg" alt="Certificado 2">
+              <div class="overlay">
+                <p>Certificado 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.linkedin.com/posts/edith-alvarez-673479125_completion-certificate-for-architecting-with-activity-7009592650790010880-Ah72?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                    <i class=""></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Certificado 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="Certificaciones/CERTIFICATE_LANDING_PAGE~2HCK5WVNT9L3.png" alt="Certificado 3">
+                <div class="overlay">
+                  <p>Certificado 3</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/2HCK5WVNT9L3?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" rel="noopener noreferrer">
+                      <i class=""></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.linkedin.com/in/edith-alvarez-673479125/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más certificacioones
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Otros cursos</h2>
+      <div class="card">
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              HTML
+            </li>
+          </a>
+          <a href="https://www.w3schools.com/w3css/defaulT.asp" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              CSS
+            </li>
+          </a>
+          <a href="https://www.coursera.org/googlecloud" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Google Cloud Platform
+            </li>
+          </a>
+          <a href="https://www.udemy.com/es/courses/personal-development/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Desarrollo personal
+          </a>
+          <a href="https://learn.microsoft.com/es-es/certifications/exams/az-900/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Microsoft AZ-900 Azure Fundamentals
+          </a>
+        </ul>
+      </div>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más cursos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis compañeros...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/juan.jpg" alt="Foto de Gino">
+              <p class="testimonio-texto">Edith cuenta con experiencia en el trabajo en equipo y responde de excelente manera al trabajo bajo presión. Es un verdadero profesional responsable en constante crecimiento. </p>
+              <div class="testimonio-info">
+                <p class="cliente">Juan</p>
+                <p class="cargo">Consultor</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/luia.jpg" alt="Foto de Nora">
+              <p class="testimonio-texto">Fuimos compañeros durante la universidad y ella siempre cumplía en tiempo y forma. Atendía a las personas con gran calidad y respeto.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Luis</p>
+                <p class="cargo">Desarrollador Web</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/dan.jpg" alt="Foto de Leonardo">
+              <p class="testimonio-texto">Una compañera muy carismática llena de creatividad, buenas ideas, positivismo, capaz de liderar equipos y al mismo tiempo tomar decisiones correctas bajo presión.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Daniel</p>
+                <p class="cargo">Programador</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:janedoe@micorreo.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://github.com/EdithAlvarez" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://mx.linkedin.com/in/edith-alvarez-673479125" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://instagram.com/_edith.97?igshid=MjEwN2IyYWYwYw==" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Edith Alvarez (2023) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
